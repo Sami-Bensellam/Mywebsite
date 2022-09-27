@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Sami Website</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/icon3.png" height="100" width="100" style = "position:relative; left:20px; top:50px;">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="Projects.html">PROJECTS</a></li>
+                    <li><a href="searchalgo.html">CONSTELATION.SEARCH</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"target="_blank">TOP SECRET</a></li>
+                    <li><a href="CSlavem.html">REFERENCES</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Welcome to my website!</h1>
+        <p>This website's purpose is to showcase my project and to give you an idea of who I am!</p>
+        <a href="https://github.com/Sami-Bensellam" class= "mainbtn">GIT-HUB</a>
+        <a href="https://www.linkedin.com/in/samibensellam/" class= "mainbtn">LINKED-IN</a>
+        <a href="" class= "mainbtn">IDK-YET</a>
+    </section>
+<section class="about">
+    <h1>About:</h1>
+    <p>Hello, My name is Sami Bensellam a Junior undergraduate Software engineer at Iowa State University. I currently pursuing a degree in software engineering with a minor in Data Science.</p>
+
+    <div class="row">
+        <div class="col">
+            <h3>Abilities</h3>
+            <p>I am a trilingual With the ability to speak french Arabic and of course English. I have knowledge and experience in both front end development and backend development. My experience ranges from digital logic, embedded and high level data analysis.</p>    
+        </div>
+        <div class="col">
+        <h3>Goals</h3>
+        <p>I am currently looking for an internship over the Summer of 2023. And potentially a fulltime Job after graduation. Thank you for checking out my website!</p>
+        </div>
+        <img src="images/profile2.jpg"height="300" width="300" style = "  border-radius: 50%;">
+        </div>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</html>
